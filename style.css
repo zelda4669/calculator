@@ -1,0 +1,42 @@
+body {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container {
+    display: flex;
+    gap: 5px;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: end;
+}
+
+button {
+    font-size:xx-large;
+    height: 100px;
+    width: 100px
+}
+
+.textbox {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    padding: 50px 10px;
+    font-size: xx-large;
+    background-color: whitesmoke;
+    width: 395px;
+    border-radius: 10px;
+    text-align: right;
+}
