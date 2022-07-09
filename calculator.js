@@ -72,7 +72,10 @@ function operate(operator,a,b) {
         case 'multiply':
             return a * b
         case 'divide':
-            return a / b
+            if(b === 0){
+                window.alert("Didn't your mother teach you not to divide by zero?")
+                return 0
+            } else return a / b
     }
 }
 
