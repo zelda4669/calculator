@@ -5,6 +5,7 @@ const equalsKey = document.querySelector('#equals').addEventListener('click', do
 const clearKey = document.querySelector('#clear').addEventListener('click', clear)
 const delKey = document.querySelector('#backspace').addEventListener('click', backspace)
 
+
 let display = []
 let firstValue = ''
 let operator
@@ -17,6 +18,22 @@ numKey.forEach((num) => {
 mathKey.forEach((key) => {
     key.addEventListener('click', startMath)
 })
+
+const negativeKey = document.querySelector('#negative').addEventListener('click', changeSign)
+
+function changeSign() {
+    if(display.length > 0) {
+        if(display[0] != '-') {
+            display.unshift('-')
+            textbox.textContent = display.join('')
+            console.log(display)
+        } else if(display[0] === '-') {
+            display.shift()
+            textbox.textContent = display.join('')
+            console.log(display)
+        }
+    }
+}
 
 function clear() {
     display = []
